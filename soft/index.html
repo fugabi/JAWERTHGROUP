@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js"></script>
+        <script src="soft.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <script type="x-shader/x-vertex" id="vertexshader">
+
+            attribute float size;
+            attribute vec3 customColor;
+            varying vec3 vColor;
+          
+            void main() {
+          
+              vColor = customColor;
+              vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+              gl_PointSize = size * ( 300.0 / -mvPosition.z );
+              gl_Position = projectionMatrix * mvPosition;
+          
+            }
+          
+          </script>
+          <script type="x-shader/x-fragment" id="fragmentshader">
+          
+           uniform vec3 color;
+           uniform sampler2D pointTexture;
+          
+           varying vec3 vColor;
+          
+           void main() {
+          
+             gl_FragColor = vec4( color * vColor, 1.0 );
+             gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
+          
+           }
+          </script>
+          
+          <div style="width: auto;margin: auto  ;" id="magic"></div>
+          
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam excepturi ex libero cumque amet pariatur rem eligendi, mollitia nulla suscipit! Nemo dicta vero tenetur quis amet. Ratione, reprehenderit autem. Consequuntur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quos tempore deserunt hic? Deserunt ex ducimus unde, dignissimos, molestias voluptas rem corporis quae perferendis blanditiis et suscipit non. Fugiat, unde. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde consectetur accusantium velit pariatur cupiditate officia quis quidem harum provident neque atque autem molestiae distinctio voluptatibus doloremque, omnis, quisquam laborum esse.
+                    </p>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
