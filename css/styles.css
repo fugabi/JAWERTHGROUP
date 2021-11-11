@@ -1397,9 +1397,11 @@ figure img + figcaption {
 
 figcaption {
   font-style: italic;
-  font-size: var(--text-sm);
+  font-size: var(--text-md);
   text-align: center;
   margin-bottom: 0;
+  padding-top: 1.5rem;
+  z-index: 1;
 }
 
 /* preformatted, code
@@ -3771,9 +3773,9 @@ img.u-pull-left {
   --multiplier: 1;
   display: flex;
   align-items: center;
-  font-family: var(--font-2);
-  font-weight: 400;
-  font-size: calc(var(--text-email-size) * var(--multiplier));
+  font-family: var(--font-1);
+  font-weight: 300;
+  font-size: calc(var(--text-md));
   line-height: 1;
   margin: var(--vspace-0_25) 0 var(--vspace-0_25);
   padding-left: var(--vspace-0_25);
@@ -4074,16 +4076,16 @@ img.u-pull-left {
     } */
 }
 
-@media screen and (max-width: 400px) {
-  .contact-email {
-    font-size: var(--text-l);
+/* @media screen and (max-width: 400px) {
+  .contact-email  {
+    font-size: 130px;
   }
 
-  .contact-number {
-    font-size: var(--text-xs);
+  .contact-number .a {
+    font-size: var(--text-lg);
     line-height: var(--vspace-0_5);
   }
-}
+} */
 
 #soft {
   position: absolute;
