@@ -3825,7 +3825,7 @@ img.u-pull-left {
 /* ------------------------------------------------------------------- 
  * ## go top
  * ------------------------------------------------------------------- */
-.ss-go-top {
+/* .ss-go-top {
   z-index: 2;
   opacity: 0;
   visibility: hidden;
@@ -3886,7 +3886,7 @@ img.u-pull-left {
   text-transform: uppercase;
   letter-spacing: 0.35em;
   color: var(--color-2-darker);
-  /* transform        : rotate(-90deg); */
+  transform        : rotate(-90deg);
   transform-origin: left bottom;
   position: absolute;
   left: calc(50% + var(--vspace-0_5));
@@ -3894,7 +3894,7 @@ img.u-pull-left {
 }
 .ss-go-top .menu0 > a {
   color: red;
-}
+} */
 
 /* ------------------------------------------------------------------- 
  * ## footer 
