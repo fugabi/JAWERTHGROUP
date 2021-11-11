@@ -3767,22 +3767,29 @@ img.u-pull-left {
 /* email link
  */
 .contact-email {
-  --text-email-size: 6.8rem;
+  --text-email-size: 2.5rem;
   --multiplier: 1;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   font-family: var(--font-2);
   font-weight: 400;
   font-size: calc(var(--text-email-size) * var(--multiplier));
   line-height: 1;
-  margin: var(--vspace-1_75) 0 var(--vspace-0_25);
+  margin: var(--vspace-0_25) 0 var(--vspace-0_25);
+  padding-left: var(--vspace-0_25);
   color: var(--color-2-darker);
-  border-bottom: 1px solid var(--color-border);
+  /* border-bottom: 1px solid var(--color-border); */
 }
 
 .contact-email:focus,
 .contact-email:hover {
-  color: var(--color-1-dark);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  color: var(--color-1-light);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.5); */
+}
+
+.contact-align {
+  display: flex; 
+  align-items: center;
 }
 
 /* contact numbers
@@ -4069,7 +4076,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 400px) {
   .contact-email {
-    font-size: var(--text-xl);
+    font-size: var(--text-l);
   }
 
   .contact-number {
@@ -4809,16 +4816,30 @@ flex-direction: row;
   */
 
 .videoWrapper {
+  
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  /* padding-bottom: 56.25%; */
+  padding-bottom: 100%;
   height: 0;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.videoWrapper iframe {
+
+@media screen and (min-width: 1447px) {
+  .videoWrapper {
+    padding-bottom: 56.25%;
+  }
+}
+
+.videoWrapper video {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  /* top: 0;
+  left: 0; */
+  width: auto;
   height: 100%;
+  /* margin: auto; */
 }
 
 /* team cards */
@@ -4880,7 +4901,7 @@ flex-direction: row;
 
 .rounded {
   width: 70px;
-  height: 5px;
+  height: 3px;
   border-radius: 6px;
   background-image: linear-gradient(to right, #5f5f5fd3, #66e440);
   /* background: #2bb769; */
@@ -4983,17 +5004,17 @@ flex-direction: row;
 
 /* link-pub */
 .linkp {
-  /* background-color: #5f5f5fd3;
+  background-color: #5f5f5fd3;
   background-image: linear-gradient(45deg, #5f5f5fd3, #66e440);
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
-  -moz-text-fill-color: transparent; */
+  -moz-text-fill-color: transparent;
 
-  color: var(--color-2);
-
+  /* color: var(--color-2); */
+  /* color: #66e440; */
   font-size: calc(var(--text-size) * 0.9);
   text-transform: uppercase;
   cursor: pointer;
@@ -5031,3 +5052,77 @@ flex-direction: row;
   margin-top: var(--vspace-0_5);
   margin-bottom: var(--vspace-0_5);
 }
+
+
+/* cards contact */
+.teamdata {
+padding-left: 1rem;
+background-color: #5f5f5fd3;
+  background-image: linear-gradient(45deg, #5f5f5fd3, #66e440);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+/* social */
+
+.ease-all{
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+
+/* Social Icons */
+
+
+.social{
+	/* height: 12rem; */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.social li a {
+	display: inline-block;
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-right: 1rem;
+	text-align: center;
+	padding-top: 13px;
+	
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+	-ms-border-radius:50%;
+	border-radius:50%;
+	
+	/*background-color: #222;*/
+	-webkit-box-shadow: inset 0 0 0 40px rgba(34, 34, 34, 0.637);
+	-moz-box-shadow: inset 0 0 0 40px rgba(34, 34, 34, 0.637);
+	-o-box-shadow: inset 0 0 0 40px rgba(34, 34, 34, 0.637);
+	-ms-box-shadow: inset 0 0 0 40px rgba(34, 34, 34, 0.637);
+	box-shadow: inset 0 0 0 40px var(--color-3-lighter);
+	
+	color: #fff;
+}
+
+.social li a:hover{
+	-webkit-box-shadow: inset 0 0 0 3px rgba(34, 34, 34, 0.637);
+	-moz-box-shadow: inset 0 0 0 3px rgba(34, 34, 34, 0.637);
+	-o-box-shadow: inset 0 0 0 3px rgba(34, 34, 34, 0.637);
+	-ms-box-shadow: inset 0 0 0 3px rgba(34, 34, 34, 0.637);
+	box-shadow: inset 0 0 0 3px rgba(34, 34, 34, 0.637);
+	
+	color: rgba(34, 34, 34, 0.637);
+}
+
+
+
+
