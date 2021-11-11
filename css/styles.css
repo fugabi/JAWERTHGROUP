@@ -4543,6 +4543,14 @@ ul li a:hover::after {
   flex-direction: row;
 }
 
+.publications img {
+  box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
+  width: 100%; 
+  max-width: 240px; 
+  height: auto; 
+  margin:auto;
+}
+
 .publink {
   display: flex;
   justify-content: flex-start;
@@ -4836,6 +4844,7 @@ flex-direction: row;
 }
 
 .videoWrapper video {
+  box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
   position: absolute;
   /* top: 0;
   left: 0; */
