@@ -99,7 +99,7 @@ const preload = () => {
   
           this.data = {
   
-              text: 'JAWERTH\nGROUP\nPhysics Lab',
+              text: ' JAWERTH\n   GROUP\nPhysics Lab',
               amount: 1000,
               particleSize: 1,
               particleColor: 0xffffff,
