@@ -3914,7 +3914,7 @@ img.u-pull-left {
 .ss-copyright {
   z-index: 2;
   font-family: var(--font-2);
-  font-size: calc(var(--text-size) * 0.75);
+  font-size: calc(var(--text-size) * 0.95);
   line-height: var(--vspace-0_875);
   position: relative;
   display: flex;
