@@ -4861,10 +4861,12 @@ flex-direction: row;
 }
 
 .videos {
+  
   display: flex; 
   flex-direction: row; 
   align-items: flex-end;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 700px) {
