@@ -99,12 +99,12 @@ const preload = () => {
   
           this.data = {
   
-              text: ' JAWERTH\n   GROUP\nPhysics Lab',
+              text: 'JAWERTH\nGROUP\n\nmescoscopic\nbiomaterials', 
               amount: 1000,
               particleSize: 1,
               particleColor: 0xffffff,
               textSize: 5,
-              area: 20,
+              area: 15,
               ease: .075,
           }
   
