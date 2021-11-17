@@ -41,7 +41,7 @@ const preload = () => {
   
     setup(){ 
   
-      this.createParticles = new CreateParticles( this.scene, this.font,             this.particle, this.camera, this.renderer );
+      this.createParticles = new CreateParticles( this.scene, this.font, this.particle, this.camera, this.renderer );
     }
   
     render() {
@@ -103,7 +103,7 @@ const preload = () => {
               amount: 1000,
               particleSize: 1,
               particleColor: 0xffffff,
-              textSize: 5,
+              textSize: 6,
               area: 15,
               ease: .075,
           }
