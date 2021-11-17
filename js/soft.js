@@ -14,9 +14,9 @@ const preload = () => {
   
   }
   
-  if ( document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll))
-    preload ();
-  else
+  // if ( document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll))
+  //   preload ();
+  // else
     document.addEventListener("DOMContentLoaded", preload ); 
   
   class Environment {
@@ -99,7 +99,7 @@ const preload = () => {
   
           this.data = {
   
-              text: 'JAWERTH\nGROUP\n\nmescoscopic\nbiomaterials', 
+              text: 'JAWERTH\nGROUP', 
               amount: 1000,
               particleSize: 1,
               particleColor: 0xffffff,

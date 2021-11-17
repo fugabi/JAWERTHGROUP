@@ -2816,15 +2816,17 @@ img.u-pull-left {
   margin-bottom: 0;
   margin-left: 0.4rem;
   position: relative;
+  text-transform: uppercase;
+  
 }
 
 .text-pretitle::before {
   content: "";
   display: block;
-  height: 1px;
+  height: 2px;
   width: 5.6rem;
   background-color: var(--color-2-darker);
-  opacity: 0.15;
+  opacity: 0.5;
   position: absolute;
   top: 50%;
   right: calc(100% + 1.6rem);
@@ -2888,7 +2890,10 @@ img.u-pull-left {
 
 @media screen and (max-width: 800px) {
   .text-pretitle {
-    font-size: var(--text-sm);
+    font-size: var(--text-md);
+    text-align: center;
+    
+  
   }
 
   .text-huge-title {
@@ -3117,15 +3122,16 @@ img.u-pull-left {
 /* --------------------------------------------------------------------
  * ## intro header
  * -------------------------------------------------------------------- */
-.jg_intro {
-  width: 10vw;
+/* .jg_intro {
+  width: auto;
   height: var(--header-height);
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
 .jg_intro {
+  /* width: auto; */
   z-index: 4;
   position: absolute;
   top: 2.4rem;
@@ -5070,9 +5076,9 @@ background-color: #5f5f5fd3;
  .nav-toggle {
 	 cursor: pointer;
 	 height: 2rem;
-	 left: calc(100% - (90px));
+	 left: calc(100% - (60px));
 	 position: fixed;
-	 top: 7rem;
+	 top: 5rem;
 	 width: 3.2rem;
 	 z-index: 99; 
    
@@ -5161,7 +5167,7 @@ background-color: #5f5f5fd3;
   cursor: pointer;
   transition: color 0.4s ease;
   text-decoration: none;
-  font-size: 6vh;
+  font-size: 9vw;
   font-family: var(--font-3);
   font-weight: 600;
   color: #666666;
@@ -5189,11 +5195,18 @@ background-color: #5f5f5fd3;
   transition: width 0.4s ease;
 }
 
-@media (max-width: 1023px) {
+/* @media (max-width: 1023px) {
   .nav-toggle {
     position: fixed;
     top: calc(100% - (90px));
     left: calc(100% - (90px));
     z-index: 999;
+  }
+} */
+@media (min-width: 1023px) {
+  .nav ul > li > a {
+   
+    font-size: 3vw;
+    
   }
 }
