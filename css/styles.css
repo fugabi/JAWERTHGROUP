@@ -5216,7 +5216,8 @@ background-color: #5f5f5fd3;
 
 #parallax {
   position: fixed;
-  opacity: .02;
+  opacity: .017;
+  z-index: -20;
   top: -10%;
   /* left: 0; */
   width: 100%;
