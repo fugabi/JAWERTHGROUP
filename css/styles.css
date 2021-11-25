@@ -2245,7 +2245,7 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .s-intro {
   --header-height: 8.8rem;
-  --logo-width: 120px;
+  --logo-width: 100px;
   --text-display-size: 11.2rem;
   --text-multiplier: 1;
   z-index: 3;
@@ -2447,7 +2447,7 @@ img.u-pull-left {
   /* width: auto; */
   z-index: 4;
   position: absolute;
-  top: 2.4rem;
+  top: 5rem;
   left: 4rem;
 }
 
@@ -2463,7 +2463,7 @@ img.u-pull-left {
   width: var(--logo-width);
   margin: 0;
   vertical-align: bottom;
-  max-width: 120px;
+  max-width: 100px;
 }
 
 @media screen and (max-width: 700px) {
@@ -2473,6 +2473,10 @@ img.u-pull-left {
   }
 }
 
+
+.logo {
+  max-width: 120px;
+}
 
 /* --------------------------------------------------------------------
  * ## intro content
