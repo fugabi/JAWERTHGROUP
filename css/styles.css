@@ -1475,8 +1475,8 @@ hr.fancy::before {
 .attention-getter {
   font-family: var(--font-2);
   font-weight: 300;
-  font-size: calc(var(--text-size) * 1.25);
-  line-height: calc(1.25 * var(--space));
+  font-size: calc(var(--text-size) * 1.15);
+  line-height: calc(1.15 * var(--space));
   color: var(--color-text-dark);
 }
 
